@@ -34,7 +34,7 @@ public class ConnectionUtil {
     private static final String dbName = "taxi-service";
 
     private static final int dbPort = 10637;
-    private static final String URL = String.format("jdbc:mysql://%s:%d?user=%s&password=%s",
+    private static final String URL = String.format("jdbc:mysql://%s:%d?user=%s&password=%s/taxi-service",
             dbServer, dbPort, USERNAME, PASSWORD);
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 
@@ -48,11 +48,7 @@ public class ConnectionUtil {
 
     public static Connection getConnection() {
         try {
-            Connection connection = DriverManager.getConnection(URL);
-            String sqlusedb = "use " + dbName;
-            Statement stmt = connection.createStatement();
-            stmt.executeUpdate(sqlusedb);
-            return connection;
+            return DriverManager.getConnection(URL);
         } catch (SQLException e) {
             throw new RuntimeException("Can't create connection to DB ", e);
         }
