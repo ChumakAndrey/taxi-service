@@ -3,7 +3,6 @@ package taxi.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class ConnectionUtil {
     /*private static final String URL = "jdbc:mysql://localhost:3306/taxi";
@@ -34,7 +33,8 @@ public class ConnectionUtil {
     private static final String dbName = "taxi-service";
 
     private static final int dbPort = 10637;
-    private static final String URL = String.format("jdbc:mysql://%s:%d?user=%s&password=%s/taxi-service",
+    private static final String URL = String.format("jdbc:mysql:"
+                    + "//%s:%d?user=%s&password=%s/taxi-service",
             dbServer, dbPort, USERNAME, PASSWORD);
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 
