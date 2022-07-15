@@ -36,8 +36,8 @@ public class ConnectionUtil {
     /*private static final String URL = String.format("jdbc:mysql:"
                     + "//%s:%d?user=%s&password=%s/sql11506635",
             dbServer, dbPort, USERNAME, PASSWORD);*/
-    private static final String URL = "jdbc:mysql://sql11.freesqldatabase.com:3306?"
-            + "user=sql11506635&password=V5ylb1UW7T/sql11506635";
+    private static final String URL = "jdbc:mysql://sql11.freesqldatabase.com:3306/"
+            + "sql11506635?user=sql11506635&password=V5ylb1UW7T";
 
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 
