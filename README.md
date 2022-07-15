@@ -14,6 +14,9 @@ When you open app at first you see login page. You can log in there or register.
 After passing registration you will see main menu. There you can choose any operation. 
 Also, there are buttons in the top left corner, where you can see your current cars, back to main menu or log out.
 
+## This project deployed on Heroku:
+[Taxi-service](https://pure-depths-95547.herokuapp.com/login)
+
 ## Technologies used in project:
 * Java 11
 * Servlet API 4.0.1
